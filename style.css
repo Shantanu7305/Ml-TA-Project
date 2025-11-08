@@ -1,0 +1,157 @@
+/* SmartWaste Custom Styles */
+.main-header {
+    background: linear-gradient(135deg, #2ecc71 0%, #3498db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #2ecc71;
+    transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.waste-saved {
+    border-left-color: #2ecc71;
+    background: linear-gradient(135deg, #d4edda 0%, #c8e6c9 100%);
+}
+
+.waste-alert {
+    border-left-color: #e74c3c;
+    background: linear-gradient(135deg, #f8d7da 0%, #ffcdd2 100%);
+    animation: pulse 2s infinite;
+}
+
+.recommendation {
+    background: linear-gradient(135deg, #d1ecf1 0%, #b3e5fc 100%);
+    border-left: 5px solid #3498db;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.recommendation:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.food-type-fruits { border-left-color: #e74c3c; background-color: #ffebee; }
+.food-type-vegetables { border-left-color: #2ecc71; background-color: #e8f5e8; }
+.food-type-dairy { border-left-color: #f39c12; background-color: #fff3e0; }
+.food-type-meat { border-left-color: #c0392b; background-color: #fbe9e7; }
+.food-type-grains { border-left-color: #8e44ad; background-color: #f3e5f5; }
+.food-type-bakery { border-left-color: #d35400; background-color: #fff8e1; }
+
+/* Animations */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Progress bars */
+.stProgress > div > div > div > div {
+    background-color: #2ecc71;
+}
+
+/* Custom buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+}
+
+/* Cards for food items */
+.food-item-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+}
+
+.food-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Risk indicators */
+.risk-low { color: #27ae60; }
+.risk-medium { color: #f39c12; }
+.risk-high { color: #e74c3c; }
+
+/* Loading animation */
+.loading-dots:after {
+    content: '...';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { color: rgba(0,0,0,0); text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
+    40% { color: #2ecc71; text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
+    60% { text-shadow: .25em 0 0 #2ecc71, .5em 0 0 rgba(0,0,0,0); }
+    80%, 100% { text-shadow: .25em 0 0 #2ecc71, .5em 0 0 #2ecc71; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 2rem;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2ecc71;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #27ae60;
+}

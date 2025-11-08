@@ -1,0 +1,16 @@
+name,food_type,quantity_kg,days_to_expiry,storage_temp,price_per_kg,added_date
+Organic Apples,Fruits,2.5,7,4,120,2024-01-15
+Fresh Carrots,Vegetables,1.2,14,4,60,2024-01-15
+Whole Milk,Dairy,1.0,5,4,60,2024-01-14
+Chicken Breast,Meat,1.5,3,2,300,2024-01-16
+Basmati Rice,Grains,5.0,90,25,80,2024-01-10
+Whole Wheat Bread,Bakery,0.5,2,25,40,2024-01-17
+Bananas,Fruits,1.8,3,25,40,2024-01-16
+Spinach,Vegetables,0.8,4,4,80,2024-01-16
+Yogurt,Dairy,0.5,10,4,50,2024-01-13
+Salmon Fillet,Meat,1.0,4,2,500,2024-01-16
+Pasta,Grains,2.0,180,25,120,2024-01-05
+Croissants,Bakery,0.6,1,25,150,2024-01-17
+Oranges,Fruits,3.0,10,25,70,2024-01-14
+Broccoli,Vegetables,1.0,6,4,90,2024-01-15
+Cheese,Dairy,0.8,21,4,400,2024-01-12
